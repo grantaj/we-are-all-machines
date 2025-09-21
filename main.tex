@@ -2,6 +2,28 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{setspace}
 \usepackage[utf8]{inputenc}
+
+\usepackage{titlesec}
+
+\titleformat{\section}  % redefine \section
+  [block]               % shape
+  {\filcenter\normalfont\scshape} % format: centered, normal weight, small caps
+  {}                    % label (empty → unnumbered)
+  {0pt}                 % separation between label and title
+  {}                    % before-code
+
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begin{center}
+    {\LARGE\scshape\@title \par} % big small caps title
+    \vskip 1em
+    {\large\scshape\@author \par} % smaller small caps author
+    \vskip 1em
+    {\normalsize\@date \par} % date in normal size
+  \end{center}
+}
+\makeatother
+
 \usepackage[%
   titleformat=italic,% Titles in italic 
   titleformat=commasep,% A comma between athors and title 
@@ -24,6 +46,24 @@
 \onehalfspacing
 \maketitle
 
+\begin{abstract}
+  This paper situates my painting practice within the contemporary
+  Copernican crisis, in which human intelligence is de-centred by
+  machine intelligence and truth is destabilised by post-truth
+  media. I examine how rules, optimisation, and mechanistic processes
+  position the artist-as-machine, while perceptual instabilities and
+  semantic dissipation confront the viewer-as-machine. Through
+  hard-edged abstract oil paintings that exploit colour shift
+  phenomena and deploy repeated, redacted obscenity, I expose the
+  mechanistic basis of perception and language. These works resist
+  confinement to the digital realm, insisting on physical objecthood
+  and embodied labour to amplify human provenance. My practice
+  participates in the cultural negotiation of what it means to be
+  human, reminding us that perception and truth are unstable, and that
+  we are all machines.
+\end{abstract}
+
+\section{Post Truth Machine Intelligence}
 The world is hurtling towards a Copernican crisis, in which human
 intelligence is being rapidly de-centred. Regardless of our view of
 non-human intelligences, algorithmic entities are having incredible
@@ -43,14 +83,6 @@ emergent behaviour, long accepted as ``conscious''? In the context of
 visual arts we can ask ``is consciousness a prerequisite for
 art-making?''
 
-The emergence of machine intelligence prompts questions regarding the
-extent to which we are all machines. Optical illusions quantitatively
-reveal a mechanistic basis for human visual perception, and are
-explained by understanding of how our eyes and visual processing
-circuits work. Using these illusions (brain hacking considering
-optical illusions as a system vulnerability), I confront the viewer
-with their own machine-like nature.
-
 Simultaneously in modern society there is a problem of discerning
 truth~\cite{keyes2004posttruth,mcintyre2018posttruth}.  Vested
 political and commercial interests use surveillance, big data and vast
@@ -62,18 +94,24 @@ responded, manufacturing a series of oil paintings on
 canvas. Repetitive artworks utilising optical illusions emphasise the
 relative and unstable nature (or nonexistence) of truth, the
 unreliability of perception, semantic degradation and
-re-emergence. Perception is dependent on our cultural and social
-background, like the colour shift phenomenon.  Redacted and obfuscated
-obscenity is deployed as a stand-in for control of speech, where each
-side demands free speech while simultaneously denying the same to the
-other side.
+re-emergence. These illusions quantitatively reveal a mechanistic
+basis for human visual perception, explained by modern colour science
+and physiological understanding of how our eyes and visual processing
+circuits work. Hacking the viewer's brain considering optical
+illusions as a system vulnerability, I confront the viewer with their
+own machine-like nature.
 
-The remainder of this essay discusses and contextualises these
+Perception is dependent on our cultural and social background, like
+the colour shift phenomenon.  Redacted and obfuscated obscenity is
+deployed as a stand-in for control of speech, where each side demands
+free speech while simultaneously denying the same to the other side.
+
+The remainder of this paper discusses and contextualises my
 paintings within a framework of \emph{formal} qualities,
 \emph{process} (how I made the paintings) and their (explicit)
 \emph{content}.
 
-\section{Formal Qualities}
+\section{\textsc{Formal Qualities}}
 Zylinkska considers how generative art shifts emphasis from material
 presence to algorithmic process~\cite{zylinska2020ai}, while Steyerl
 extends objecthood to the digital domain~\cite{steyerl2017duty}. In
@@ -87,7 +125,7 @@ abstractions~\cite{Greenberg1961,Alloway1975,Judd1965,Fried1968}
 calling back to artists such as Ellsworth Kelly, Ad Reinhardt, Frank
 Stella and Victor Vasarely, or more contemporaneously, Odili Donald
 Odita, Sarah Morris, Felipe Pantone, and Gabriele Evertz. Evertz
-carries forward op-art
+carries forward Op Art
 practices~\cite{Follin2004EmbodiedVisions,Riley2019EyesMind,Riley2019DialoguesOnArt,Seitz1965ResponsiveEye}
 established by artists such as Bridget Riley. Focussing on relative
 and mechanistic aspects of perception, my paintings rely on the colour
@@ -98,16 +136,16 @@ multiple receptors in the viewer's
 eye~\cite{HurvichJameson1957,Land1977,SchnapfKraftBaylor1987}.
 
 Executed in 2025, my paintings exist within these art historical
-contexts, however hard edges (emphasising artist-as-machine) and
-perceptual optical effects (perceptual instability) are
-adopted, not for their own sake\footnote{Although these paintings can
-  also be viewed as paintings about painting.}, but in dialogue with
-AI generated art and the unreliability of modern public discourse
-(everything is fake). My use of optical effects relies on
-understanding of the human visual processing system, confronting the
-viewer with their own machine like qualities (viewer-as-machine).
+contexts, however hard edges (emphasising artist-as-machine), 
+optical effects and perceptual instability are adopted, not for their
+own sake\footnote{Although these paintings can also be viewed as
+  paintings about painting.}, but in dialogue with AI generated art
+and the unreliability of modern public discourse where \emph{everything is
+fake}. My use of optical effects relies on understanding of the human
+visual processing system, confronting the viewer with their own
+machine like qualities (viewer-as-machine).
 
-Perception as an active process of
+Perception is an active process of
 interpretation~\cite{popper1972objective}, involving trial-and-error
 and learned conventions -- proceeding recursively with each artist
 extending stereotyped modes of representation utilised by previous
@@ -292,7 +330,7 @@ resolved by shifts in public attitudes and close relationships between
 humans and AI.
 
 \section{Explicit Content}
-I deploy the word \emph{fuck} as a stand-in for censorship and control
+I deploy the word \emph{fuck} as an index for censorship and control
 of speech\cite{atkins2006censoring}. This is not aligned with any
 ideology, rather an observation that all sides of politics
 simultaneously demanding ``free speech'' while aggressively denying it
@@ -353,22 +391,24 @@ communications~\cite{shannon1948}.
 
 \section{Conclusion}
 I have responded to the unsettling de-centreing of human intelligence
-and attendant othering of machine intelligence by presenting paintings
-that emphasise the artist-as-machine (through arbitrary rules,
-optimisations, and mechanistic processes), and viewer-as-machine (via
-perceptual instabilities, optical illusions, and semantic dissipation
-that destabilise what the brain and eyes think they ``know''). My
-paintings embody the AI Copernican crisis: denying the viewer their
-accustomed position of perceptual dominance and reminding us that
-\emph{we are all machines}.
+and attendant othering of machine intelligence through hard-edged oil
+paintings paintings that emphasise the artist-as-machine (through
+arbitrary rules, optimisations, and mechanistic processes), and
+viewer-as-machine (via perceptual instabilities, optical illusions,
+and semantic dissipation that destabilise what the brain and eyes
+think they ``know''). 
 
 Perceptual instabilities along with repeated, redacted and obfuscated
-obscenity further reflect on the challenges of human discourse a
+obscenity further reflect on the challenges of human discourse in a
 post-truth society. My paintings participate in the broader cultural
 negotiation of what it means to be human. Truth and perception have
 always been unstable, and it is not art's role to offer
 certainty. Rather, it reveals this fragility, and the possibilities
 that emerge when modes of knowing inevitably collapse.
+
+My paintings embody the AI Copernican crisis:
+denying the viewer their accustomed position of perceptual dominance
+and reminding us that \emph{we are all machines}.
 
 \newpage
 \bibliographystyle{jox}
