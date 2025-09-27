@@ -1,0 +1,30 @@
+# Auxiliary files
+*.aux
+*.log
+*.lof
+*.lot
+*.toc
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.dvi
+*.ps
+*.bbl
+*.blg
+*.idx
+*.ind
+*.ilg
+*.gz
+
+# PDF output (optional - depends on whether you want to track the compiled PDF)
+# *.pdf
+
+*~
+.#*
+
+# Build directories (if you use tools like latexmk that create temporary directories)
+_minted-*
