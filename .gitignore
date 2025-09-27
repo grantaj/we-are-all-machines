@@ -19,12 +19,16 @@
 *.ind
 *.ilg
 *.gz
+*.url
+
+.venv/
 
 # PDF output (optional - depends on whether you want to track the compiled PDF)
 # *.pdf
 
 *~
 .#*
+\#*#
 
 # Build directories (if you use tools like latexmk that create temporary directories)
 _minted-*
