@@ -2,18 +2,16 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{setspace}
 \usepackage[utf8]{inputenc}
-\nocite{*}
-\usepackage[%
-  titleformat=italic,% Titles in italic 
-  titleformat=commasep,% A comma between athors and title 
-  titleformat=all,% Always show a title (or a short title)
-  commabeforerest,% A comma after title 
-  ibidem=strict,% 
-  citefull=first,% The first citing in full form 
-  oxford,% The oxford style
-  super,% Footnotes 
-  see
-]{jurabib}
+\usepackage[
+  backend=biber,
+  notes,
+  dashed=false,
+  doi=false,
+  url=true,
+  isbn=false,
+  giveninits=true
+]{biblatex-chicago}
+\addbibresource{main.bib}
 
 \interfootnotelinepenalty=10000
 
@@ -28,7 +26,7 @@
 We are in the midst of a Copernican crisis in which human intelligence is
 being rapidly de-centred by machine intelligence. Large language
 models already pass Turing tests more frequently than
-humans\cite{jones2025largelanguagemodelspass,turing1950,feather2025brainmodelevaluationsneedneuroai},
+humans\autocite{jones2025largelanguagemodelspass,turing1950,feather2025brainmodelevaluationsneedneuroai},
 provoking cultural anxiety and questions about whether machine
 generated art is ``real art.'' My response is to ask whether
 consciousness is a requirement to make art, and conversely whether
@@ -36,10 +34,10 @@ humans, as biological machines, merely exhibit emergent behaviour
 under the doxa of consciousness.
 
 Simultaneously,
-post-truth\cite{keyes2004posttruth,mcintyre2018posttruth} media and
+post-truth\autocite{keyes2004posttruth,mcintyre2018posttruth} media and
 other vested interests weaponise online surveillance and data
 analytics to manipulate attention and
-perception\cite{zuboff2019surveillance,steyerl2016sea}. My work
+perception\autocite{zuboff2019surveillance,steyerl2016sea}. My work
 inhabits the intersection of these two crises.
 
 I have engineered and manufactured a series of hard-edged abstract oil
@@ -49,53 +47,53 @@ human visual processing system, confronting the viewer with their own
 machine-like nature.
 
 Formally, the works resist confinement to the digital
-realm\cite{zylinska2020ai,steyerl2017duty}, insisting on physical
-objecthood\cite{fontana1947spatial,merleauponty1964eye}. They draw on
+realm\autocite{zylinska2020ai,steyerl2017duty}, insisting on physical
+objecthood\autocite{fontana1947spatial,merleauponty1964eye}. They draw on
 the lineage of hard-edge
-abstraction\cite{Greenberg1961,Alloway1975,Judd1965,Fried1968,Follin2004EmbodiedVisions}
-and Op Art\cite{Riley2019EyesMind,Seitz1965ResponsiveEye}, extending
-Albers’s exploration of colour shift\cite{albers} through contemporary
+abstraction\autocite{Greenberg1961,Alloway1975,Judd1965,Fried1968,Follin2004EmbodiedVisions}
+and Op Art\autocite{Riley2019EyesMind,Seitz1965ResponsiveEye}, extending
+Albers’s exploration of colour shift\autocite{albers} through contemporary
 colour
-science\cite{HurvichJameson1957,Land1977,SchnapfKraftBaylor1987}. Perception
+science\autocite{HurvichJameson1957,Land1977,SchnapfKraftBaylor1987}. Perception
 is framed as an interpretive process structured by
-conventions\cite{popper1972objective,gombrich1960art}, and completed
+conventions\autocite{popper1972objective,gombrich1960art}, and completed
 mecahnistically in the viewer's
-mind\cite{merleauPonty1962phenomenology,barthes1977death,evertz09documentary}. Perceptual
-instability signals contested ontologies\cite{kuhn1970structure}, and
+mind\autocite{merleauPonty1962phenomenology,barthes1977death,evertz09documentary}. Perceptual
+instability signals contested ontologies\autocite{kuhn1970structure}, and
 repetition both
-legitimises\cite{benjamin1935kunstwerk,arendt1972lying,hasher1977frequency}
-and destabilises meaning\cite{zuboff2019surveillance}.
+legitimises\autocite{benjamin1935kunstwerk,arendt1972lying,hasher1977frequency}
+and destabilises meaning\autocite{zuboff2019surveillance}.
 
 My process adopts an engineering methodology of iteration and
 computational optimisation. Using CIECAM02 colour models and the
 uniform perceptual space
-CAM02-UCS\cite{Luo2001CIECAM02,CIE1592004,CIE1976,CIE1978Uniform,Luo2001CIEDE2000},
-I developed software\cite{grant2025colourshift} to brute-force colour
+CAM02-UCS\autocite{Luo2001CIECAM02,CIE1592004,CIE1976,CIE1978Uniform,Luo2001CIEDE2000},
+I developed software\autocite{grant2025colourshift} to brute-force colour
 surrounds that maximise perceptual shift of a stimulus colour. This
-automates Albers’s trial-and-error approach\cite{albers}. I generate
+automates Albers’s trial-and-error approach\autocite{albers}. I generate
 candidate designs digitally, down-select and then mechanistically
 realise the outcomes in oil on canvas under self-imposed rules
-recalling Reinhardt\cite{artasart}: functional not aesthetic colour,
+recalling Reinhardt\autocite{artasart}: functional not aesthetic colour,
 flat areas, hard edges, and single-session execution. In contrast to the more expedient route of digital print, I embrace the failure of perfect execution, preserving
-human presence\cite{rosenberg1952american,bois1990painting}. In this way my
+human presence\autocite{rosenberg1952american,bois1990painting}. In this way my
 work responds to human preference for human authorship and
-provenance\cite{benjamin1969art,horton2023bias,demmer2023does},
+provenance\autocite{benjamin1969art,horton2023bias,demmer2023does},
 and emphasises the cultural weight of embodied
-labour\cite{adorno1970aesthetic,sennett2008craftsman}.
+labour\autocite{adorno1970aesthetic,sennett2008craftsman}.
 
 My compositions use redacted and fragmented versions of the word
 \emph{fuck} as an index of contested
-speech\cite{atkins2006censoring,lukianoff2023cancelling} in our
+speech\autocite{atkins2006censoring,lukianoff2023cancelling} in our
 post-truth world. Through empirically tuned redaction, orthogonal
 colour assignments and disruptive colour fields, the text hovers
 between legibility and abstraction, drawing on camouflage and
 Stroop-like effects. This engages with contemporary research on
 swearing’s cognitive, cultural and neurological
-bases\cite{reiman2022swearfluency,jay2015taboo,pinker2017moral,bergen2018what}. Repetition
+bases\autocite{reiman2022swearfluency,jay2015taboo,pinker2017moral,bergen2018what}. Repetition
 produces semantic
-drain\cite{barthes1957mythologies,derrida1972dissemination}, to the
+drain\autocite{barthes1957mythologies,derrida1972dissemination}, to the
 point of new emergent
-meaning\cite{deleuze1968difference,baudrillard1981simulacra}.
+meaning\autocite{deleuze1968difference,baudrillard1981simulacra}.
 
 Summarising: I made paintings that foreground the artist-as-machine
 (through rules, optimisations and mechanistic processes) and the
@@ -114,6 +112,7 @@ intelligence: denying the viewer their accustomed position of
 perceptual dominance and reminding us that \emph{we are all machines}.
 
 \newpage
-\bibliographystyle{jox}
-\bibliography{main}
+\nocite{*}
+\printbibliography
+
 \end{document}
