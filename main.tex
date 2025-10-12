@@ -2,7 +2,7 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{setspace}
 \usepackage[utf8]{inputenc}
-
+\usepackage{epigraph}
 \usepackage{titlesec}
 
 \titleformat{\section}  % redefine \section
@@ -23,6 +23,13 @@
   \end{center}
 }
 \makeatother
+
+\setlength{\epigraphwidth}{\textwidth}
+\setlength{\epigraphrule}{0pt}
+\renewcommand{\textflush}{flushleft}
+\renewcommand{\epigraphsize}{\itshape\normalsize}
+\renewcommand{\epigraphflush}{flushleft}
+\newcommand{\epigraphsource}[1]{--- {\small\textit #1}}
 
 \usepackage[
   backend=biber,
@@ -63,6 +70,8 @@
 \end{abstract}
 
 \section{Post Truth Machine Intelligence}
+\epigraph{The real question is not whether machines think but whether men do. The mystery which surrounds a thinking machine already surrounds a thinking man.}{\epigraphsource{B. F. Skinner}}
+
 The world is hurtling towards a Copernican crisis,\footnote{I use this
   term in reference to the profound epistemic, cultural and religious
   crisis resulting from Copernicus' astronomical contradiction of
@@ -120,6 +129,9 @@ are provided in Figures~\ref{fig:black}--\ref{fig:orange}. Captions
 are descriptive and non-titular.
 
 \section{\textsc{Formal Qualities}}
+\epigraph{Without the viewer the painting doesn't exist. The viewer brings
+the painting to life}{\epigraphsource{Gabriele Evertz}}
+  
 We begin with the formal qualities of my paintings, showing how
 physical objecthood and optical illusions configure the
 viewer-as-machine.\footnote{By ``viewer-as-machine'' I mean the
@@ -240,6 +252,8 @@ mechanistic ``computational elements'' reflects this idea of
 emergent intelligence.
 
 \section{How I made the Paintings}\label{sec:process}
+\epigraph{The idea becomes a machine that makes the art.}{\epigraphsource{Sol LeWitt}}
+
 Turning now to the process, I show how optimisation and engineering
 configure the artist-as-machine, while establishing human provenance.
 
@@ -404,6 +418,8 @@ resolved by shifts in public attitudes and close relationships between
 humans and AI.\autocite{shevlin2023consciousness}
 
 \section{Explicit Content}
+\epigraph{Who needs censorship when the truth can be buried under a pile of bullshit?}{\epigraphsource{{Lee McIntyre}}}
+
 Finally, I consider how redaction, obfuscation and repetition of
 obscenity model perceptual instability, extending our mechanistic
 framework to language. As discussed earlier, repetition also operates
